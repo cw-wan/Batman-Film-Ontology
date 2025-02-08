@@ -60,6 +60,8 @@ hasStoryWriter = BASE.hasStoryWriter
 hasScreenplayWriter = BASE.hasScreenplayWriter
 hasCharacterWriter = BASE.hasCharacterWriter
 hasReleaseDate = BASE.hasReleaseDate
+# for rule-bases inference
+hasSequel = BASE.hasSequel
 
 object_properties = [
     (hasDirector, Film, Director),
@@ -69,6 +71,7 @@ object_properties = [
     (hasScreenplayWriter, Film, Writer),
     (hasCharacterWriter, Film, Writer),
     (hasReleaseDate, Film, Date),
+    (hasSequel, Film, Film),
 ]
 
 for (prop, d, r) in object_properties:

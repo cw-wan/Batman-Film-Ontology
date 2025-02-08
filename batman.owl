@@ -1,142 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_v_superman_2016">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman v Superman</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.5</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasRottenTomatoScore>
-    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</hasMetascore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman v Superman</name>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_judd_winick">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Judd Winick</name>
+  </Writer>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_&amp;_mr_freeze:_subzero_1998">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman &amp; Mr. Freeze: SubZero</hasTitle>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.2</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman &amp; Mr. Freeze: SubZero</name>
     <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_v_superman_2016">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_&amp;_mr_freeze:_subzero_1998">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</hasYear>
         <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasDay>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasDay>
       </Date>
     </hasReleaseDate>
     <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_zack_snyder">
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_boyd_kirkland">
         <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zack Snyder</name>
-      </Director>
-    </hasDirector>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ben_affleck">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben Affleck</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_henry_cavill">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Henry Cavill</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_amy_adams">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amy Adams</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jesse_eisenberg">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jesse Eisenberg</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy>
-      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Bros. Pictures</name>
-      </ProductionCompany>
-    </isProducedBy>
-    <hasCharacterWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_william_moulton_marston">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William Moulton Marston</name>
-      </Writer>
-    </hasCharacterWriter>
-  </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#the_dark_knight_2008">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">152</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</hasRottenTomatoScore>
-    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasMetascore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_the_dark_knight_2008">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher Nolan</name>
-      </Director>
-    </hasDirector>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christian_bale">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christian Bale</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_heath_ledger">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath Ledger</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_aaron_eckhart">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aaron Eckhart</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_caine">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Caine</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy>
-      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures/legendary">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Bros. Pictures/Legendary</name>
-      </ProductionCompany>
-    </isProducedBy>
-    <hasScreenplayWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jonathan_nolan">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonathan Nolan</name>
-      </Writer>
-    </hasScreenplayWriter>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasStoryWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David S. Goyer</name>
-      </Writer>
-    </hasStoryWriter>
-    <hasCharacterWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob Kane</name>
-      </Writer>
-    </hasCharacterWriter>
-  </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_the_killing_joke_2016">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Killing Joke</hasTitle>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Killing Joke</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_the_killing_joke_2016">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_liu">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Liu</name>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boyd Kirkland</name>
       </Director>
     </hasDirector>
     <hasActor>
@@ -145,25 +33,88 @@
       </Actor>
     </hasActor>
     <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_ansara">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Ansara</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_loren_lester">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loren Lester</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_efrem_zimbalist_jr">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Efrem Zimbalist Jr.</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy>
+      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Bros. Pictures</name>
+      </ProductionCompany>
+    </isProducedBy>
+  </Film>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_beyond:_return_of_the_joker_2000">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Beyond: Return of the Joker</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Beyond: Return of the Joker</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_beyond:_return_of_the_joker_2000">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_curt_geda">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curt Geda</name>
+      </Director>
+    </hasDirector>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_will_friedle">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Will Friedle</name>
+      </Actor>
+    </hasActor>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kevin_conroy"/>
+    <hasActor>
       <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_mark_hamill">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Hamill</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tara_strong">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tara Strong</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ray_wise">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ray Wise</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_angie_harmon">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angie Harmon</name>
       </Actor>
     </hasActor>
     <isProducedBy>
-      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_the_answer_studio">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Answer Studio</name>
+      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_home_video">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Home Video</name>
       </ProductionCompany>
     </isProducedBy>
+    <hasCharacterWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob Kane</name>
+      </Writer>
+    </hasCharacterWriter>
+    <hasStoryWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_paul_dini">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Dini</name>
+      </Writer>
+    </hasStoryWriter>
+    <hasStoryWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_glen_murakami">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glen Murakami</name>
+      </Writer>
+    </hasStoryWriter>
+    <hasStoryWriter>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_timm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruce Timm</name>
+      </Director>
+    </hasStoryWriter>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_paul_dini"/>
   </Film>
   <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_mask_of_the_phantasm_1993">
     <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Mask of the Phantasm</hasTitle>
@@ -183,23 +134,13 @@
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eric Radomski</name>
       </Director>
     </hasDirector>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_timm">
-        <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruce Timm</name>
-      </Director>
-    </hasDirector>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_timm"/>
     <hasDirector>
       <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kevin_altieri">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kevin Altieri</name>
       </Director>
     </hasDirector>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_boyd_kirkland">
-        <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boyd Kirkland</name>
-      </Director>
-    </hasDirector>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_boyd_kirkland"/>
     <hasDirector>
       <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_frank_paur">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank Paur</name>
@@ -234,11 +175,7 @@
       </Writer>
     </hasStoryWriter>
     <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_alan_burnett"/>
-    <hasScreenplayWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_paul_dini">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Dini</name>
-      </Writer>
-    </hasScreenplayWriter>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_paul_dini"/>
     <hasScreenplayWriter>
       <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_martin_pasko">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martin Pasko</name>
@@ -247,106 +184,6 @@
     <hasScreenplayWriter>
       <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_reaves">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Reaves</name>
-      </Writer>
-    </hasScreenplayWriter>
-  </Film>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_ostrander">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Ostrander</name>
-  </Writer>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasMonth"/>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_1989">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasRottenTomatoScore>
-    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</hasMetascore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_1989">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tim_burton">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Burton</name>
-      </Director>
-    </hasDirector>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_keaton">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Keaton</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jack_nicholson">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Nicholson</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kim_basinger">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kim Basinger</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_robert_wuhl">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Wuhl</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
-    <hasStoryWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_hamm">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Hamm</name>
-      </Writer>
-    </hasStoryWriter>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_hamm"/>
-    <hasScreenplayWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_warren_skaaren">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warren Skaaren</name>
-      </Writer>
-    </hasScreenplayWriter>
-  </Film>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasScreenplayWriter">
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-  </owl:ObjectProperty>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#justice_league_2017">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice League</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasRottenTomatoScore>
-    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasMetascore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice League</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_justice_league_2017">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_zack_snyder"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ben_affleck"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_henry_cavill"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_amy_adams"/>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_gal_gadot">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal Gadot</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-    <hasStoryWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_chris_terrio">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Terrio</name>
-      </Writer>
-    </hasStoryWriter>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_zack_snyder"/>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_chris_terrio"/>
-    <hasScreenplayWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_joss_whedon">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joss Whedon</name>
       </Writer>
     </hasScreenplayWriter>
   </Film>
@@ -410,201 +247,167 @@
       </Writer>
     </hasScreenplayWriter>
   </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_under_the_red_hood_2010">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Under the Red Hood</hasTitle>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#the_dark_knight_rises_2012">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight Rises</hasTitle>
     <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Under the Red Hood</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_under_the_red_hood_2010">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brandon_vietti">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandon Vietti</name>
-      </Director>
-    </hasDirector>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_greenwood">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruce Greenwood</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jensen_ackles">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jensen Ackles</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_dimaggio">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John DiMaggio</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_neil_patrick_harris">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neil Patrick Harris</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-  </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_year_one_2011">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Year One</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.4</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Year One</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_year_one_2011">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_liu"/>
-    <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_lauren_montgomery">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lauren Montgomery</name>
-      </Director>
-    </hasDirector>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bryan_cranston">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bryan Cranston</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ben_mckenzie">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben McKenzie</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_eliza_dushku">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eliza Dushku</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jon_polito">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Polito</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-  </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_the_dark_knight_returns_part_2_2013">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 2</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</hasRuntime>
     <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.4</hasImdbRating>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 2</name>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasRottenTomatoScore>
+    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasMetascore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight Rises</name>
     <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_the_dark_knight_returns_part_2_2013">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasDay>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_the_dark_knight_rises_2012">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasDay>
       </Date>
     </hasReleaseDate>
     <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jay_oliva">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jay Oliva</name>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher Nolan</name>
       </Director>
     </hasDirector>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_peter_weller">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Weller</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christian_bale">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christian Bale</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ariel_winter">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ariel Winter</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_gary_oldman">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gary Oldman</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_emerson">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Emerson</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tom_hardy">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Hardy</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_selby">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Selby</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_joseph_gordon-levitt">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Gordon-Levitt</name>
       </Actor>
     </hasActor>
     <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
-    <hasCharacterWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jerry_siegel">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jerry Siegel</name>
+    <hasScreenplayWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jonathan_nolan">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonathan Nolan</name>
       </Writer>
-    </hasCharacterWriter>
-    <hasCharacterWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_joe_shuster">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe Shuster</name>
-      </Writer>
-    </hasCharacterWriter>
-  </Film>
-  <owl:Ontology rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology"/>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_begins_2005">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Begins</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.2</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasRottenTomatoScore>
-    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasMetascore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Begins</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_begins_2005">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christian_bale"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_caine"/>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_liam_neeson">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liam Neeson</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_katie_holmes">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katie Holmes</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer"/>
+    </hasScreenplayWriter>
     <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer"/>
+    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
+    <hasStoryWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David S. Goyer</name>
+      </Writer>
+    </hasStoryWriter>
+    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
   </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_the_dark_knight_returns_part_1_2012">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 1</hasTitle>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_v_superman_2016">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman v Superman</hasTitle>
     <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 1</name>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.5</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasRottenTomatoScore>
+    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</hasMetascore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman v Superman</name>
     <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_the_dark_knight_returns_part_1_2012">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasMonth>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_v_superman_2016">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
         <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasDay>
       </Date>
     </hasReleaseDate>
-    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jay_oliva"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_peter_weller"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ariel_winter"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_selby"/>
+    <hasDirector>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_zack_snyder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zack Snyder</name>
+      </Director>
+    </hasDirector>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_wade_williams">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wade Williams</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ben_affleck">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben Affleck</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_henry_cavill">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Henry Cavill</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_amy_adams">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amy Adams</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jesse_eisenberg">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jesse Eisenberg</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
+    <hasCharacterWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_william_moulton_marston">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William Moulton Marston</name>
+      </Writer>
+    </hasCharacterWriter>
+  </Film>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_1989">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.5</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasRottenTomatoScore>
+    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</hasMetascore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_1989">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tim_burton">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Burton</name>
+      </Director>
+    </hasDirector>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_keaton">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Keaton</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jack_nicholson">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Nicholson</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kim_basinger">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kim Basinger</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_robert_wuhl">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Wuhl</name>
       </Actor>
     </hasActor>
     <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
     <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
+    <hasStoryWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_hamm">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Hamm</name>
+      </Writer>
+    </hasStoryWriter>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_hamm"/>
+    <hasScreenplayWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_warren_skaaren">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warren Skaaren</name>
+      </Writer>
+    </hasScreenplayWriter>
   </Film>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jack_kirby">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Kirby</name>
+  </Writer>
   <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_&amp;_robin_1997">
     <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman &amp; Robin</hasTitle>
     <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
@@ -641,137 +444,129 @@
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uma Thurman</name>
       </Actor>
     </hasActor>
-    <isProducedBy>
-      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_home_video">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Home Video</name>
-      </ProductionCompany>
-    </isProducedBy>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_home_video"/>
     <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
   </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_&amp;_mr_freeze:_subzero_1998">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman &amp; Mr. Freeze: SubZero</hasTitle>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.2</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman &amp; Mr. Freeze: SubZero</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_&amp;_mr_freeze:_subzero_1998">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_boyd_kirkland"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kevin_conroy"/>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_ansara">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Ansara</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_loren_lester">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loren Lester</name>
-      </Actor>
-    </hasActor>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_efrem_zimbalist_jr">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Efrem Zimbalist Jr.</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-  </Film>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasStoryWriter">
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-  </owl:ObjectProperty>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_beyond:_return_of_the_joker_2000">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Beyond: Return of the Joker</hasTitle>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_the_dark_knight_returns_part_1_2012">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 1</hasTitle>
     <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
     <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Beyond: Return of the Joker</name>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 1</name>
     <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_beyond:_return_of_the_joker_2000">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasDay>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_the_dark_knight_returns_part_1_2012">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasDay>
       </Date>
     </hasReleaseDate>
     <hasDirector>
-      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_curt_geda">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curt Geda</name>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jay_oliva">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jay Oliva</name>
       </Director>
     </hasDirector>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_will_friedle">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Will Friedle</name>
-      </Actor>
-    </hasActor>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kevin_conroy"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_mark_hamill"/>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_angie_harmon">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angie Harmon</name>
-      </Actor>
-    </hasActor>
-    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_home_video"/>
-    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_paul_dini"/>
-    <hasStoryWriter>
-      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_glen_murakami">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glen Murakami</name>
-      </Writer>
-    </hasStoryWriter>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_timm"/>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_paul_dini"/>
-  </Film>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#the_dark_knight_rises_2012">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight Rises</hasTitle>
-    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.4</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasRottenTomatoScore>
-    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasMetascore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight Rises</name>
-    <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_the_dark_knight_rises_2012">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasDay>
-      </Date>
-    </hasReleaseDate>
-    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christian_bale"/>
-    <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_gary_oldman">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gary Oldman</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_peter_weller">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Weller</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tom_hardy">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Hardy</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ariel_winter">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ariel Winter</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_joseph_gordon-levitt">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Gordon-Levitt</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_selby">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Selby</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_wade_williams">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wade Williams</name>
       </Actor>
     </hasActor>
     <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jonathan_nolan"/>
-    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
-    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer"/>
     <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
   </Film>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_klaus_janson">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klaus Janson</name>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_james_krieg">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Krieg</name>
   </Writer>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasDirector">
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasScreenplayWriter">
     <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Director"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
   </owl:ObjectProperty>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_the_dark_knight_returns_part_2_2013">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 2</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.4</hasImdbRating>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Dark Knight Returns, Part 2</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_the_dark_knight_returns_part_2_2013">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jay_oliva"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_peter_weller"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ariel_winter"/>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_emerson">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Emerson</name>
+      </Actor>
+    </hasActor>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_selby"/>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
+    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
+    <hasCharacterWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jerry_siegel">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jerry Siegel</name>
+      </Writer>
+    </hasCharacterWriter>
+    <hasCharacterWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_joe_shuster">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe Shuster</name>
+      </Writer>
+    </hasCharacterWriter>
+  </Film>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_the_killing_joke_2016">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Killing Joke</hasTitle>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: The Killing Joke</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_the_killing_joke_2016">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_liu">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Liu</name>
+      </Director>
+    </hasDirector>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_kevin_conroy"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_mark_hamill"/>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tara_strong">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tara Strong</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ray_wise">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ray Wise</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy>
+      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_the_answer_studio">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Answer Studio</name>
+      </ProductionCompany>
+    </isProducedBy>
+  </Film>
   <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_returns_1992">
     <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Returns</hasTitle>
     <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
@@ -814,65 +609,175 @@
     <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_hamm"/>
     <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_daniel_waters"/>
   </Film>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasDay"/>
-  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_gotham_by_gaslight_2018">
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Gotham by Gaslight</hasTitle>
-    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasRuntime>
-    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.7</hasImdbRating>
-    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</hasRottenTomatoScore>
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Gotham by Gaslight</name>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman_begins_2005">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Begins</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.2</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasRottenTomatoScore>
+    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasMetascore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman Begins</name>
     <hasReleaseDate>
-      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_gotham_by_gaslight_2018">
-        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</hasYear>
-        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
-        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasDay>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman_begins_2005">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christian_bale"/>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_caine">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michael Caine</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_liam_neeson">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liam Neeson</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_katie_holmes">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katie Holmes</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
+    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
+    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer"/>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer"/>
+  </Film>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bill_finger">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Finger</name>
+  </Writer>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#justice_league_2017">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice League</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasRottenTomatoScore>
+    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasMetascore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justice League</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_justice_league_2017">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_zack_snyder"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ben_affleck"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_henry_cavill"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_amy_adams"/>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_gal_gadot">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal Gadot</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
+    <hasStoryWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_chris_terrio">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Terrio</name>
+      </Writer>
+    </hasStoryWriter>
+    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_zack_snyder"/>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_chris_terrio"/>
+    <hasScreenplayWriter>
+      <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_joss_whedon">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joss Whedon</name>
+      </Writer>
+    </hasScreenplayWriter>
+  </Film>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_under_the_red_hood_2010">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Under the Red Hood</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Under the Red Hood</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_under_the_red_hood_2010">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brandon_vietti">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandon Vietti</name>
+      </Director>
+    </hasDirector>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_greenwood">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruce Greenwood</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jensen_ackles">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jensen Ackles</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_dimaggio">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John DiMaggio</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_neil_patrick_harris">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neil Patrick Harris</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
+  </Film>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brian_bolland">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian Bolland</name>
+  </Writer>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasStoryWriter">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
+  </owl:ObjectProperty>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_year_one_2011">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Year One</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.4</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Year One</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_year_one_2011">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasDay>
       </Date>
     </hasReleaseDate>
     <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_liu"/>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_greenwood"/>
+    <hasDirector>
+      <Director rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_lauren_montgomery">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lauren Montgomery</name>
+      </Director>
+    </hasDirector>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jennifer_carpenter">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jennifer Carpenter</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bryan_cranston">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bryan Cranston</name>
       </Actor>
     </hasActor>
     <hasActor>
-      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_chris_cox">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Cox</name>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_ben_mckenzie">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ben McKenzie</name>
       </Actor>
     </hasActor>
-    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_dimaggio"/>
-    <isProducedBy>
-      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_dc_entertainment">
-        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC Entertainment</name>
-      </ProductionCompany>
-    </isProducedBy>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_eliza_dushku">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eliza Dushku</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jon_polito">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jon Polito</name>
+      </Actor>
+    </hasActor>
+    <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
   </Film>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#isProducedBy">
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#ProductionCompany"/>
-  </owl:ObjectProperty>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_james_krieg">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Krieg</name>
-  </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_richmond_lewis">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richmond Lewis</name>
-  </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_heath_corson">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath Corson</name>
-  </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brian_augustyn">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian Augustyn</name>
-  </Writer>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasActor">
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Actor"/>
-  </owl:ObjectProperty>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_judd_winick">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Judd Winick</name>
-  </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_frank_miller">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank Miller</name>
-  </Writer>
   <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_assault_on_arkham_2014">
     <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Assault on Arkham</hasTitle>
     <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
@@ -911,21 +816,130 @@
     </hasActor>
     <isProducedBy rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures"/>
   </Film>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jack_kirby">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Kirby</name>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasMetascore"/>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#the_dark_knight_2008">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight</hasTitle>
+    <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRating>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">152</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</hasRottenTomatoScore>
+    <hasMetascore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasMetascore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_the_dark_knight_2008">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christian_bale"/>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_heath_ledger">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath Ledger</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_aaron_eckhart">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aaron Eckhart</name>
+      </Actor>
+    </hasActor>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_michael_caine"/>
+    <isProducedBy>
+      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_warner_bros_pictures/legendary">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warner Bros. Pictures/Legendary</name>
+      </ProductionCompany>
+    </isProducedBy>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jonathan_nolan"/>
+    <hasScreenplayWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
+    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_christopher_nolan"/>
+    <hasStoryWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_s_goyer"/>
+    <hasCharacterWriter rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_kane"/>
+  </Film>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_richmond_lewis">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richmond Lewis</name>
   </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_mike_mignola">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mike Mignola</name>
-  </Writer>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasSequel">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+  </owl:ObjectProperty>
   <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_dick_giordano">
     <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dick Giordano</name>
   </Writer>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasYear"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasTitle"/>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_byrne">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Byrne</name>
+  </Writer>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasCharacterWriter">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
+  </owl:ObjectProperty>
+  <Film rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#batman:_gotham_by_gaslight_2018">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Gotham by Gaslight</hasTitle>
+    <hasRuntime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasRuntime>
+    <hasImdbRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.7</hasImdbRating>
+    <hasRottenTomatoScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</hasRottenTomatoScore>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batman: Gotham by Gaslight</name>
+    <hasReleaseDate>
+      <Date rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#releaseDate_batman:_gotham_by_gaslight_2018">
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</hasYear>
+        <hasMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasMonth>
+        <hasDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasDay>
+      </Date>
+    </hasReleaseDate>
+    <hasDirector rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_sam_liu"/>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bruce_greenwood"/>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_jennifer_carpenter">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jennifer Carpenter</name>
+      </Actor>
+    </hasActor>
+    <hasActor>
+      <Actor rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_chris_cox">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Cox</name>
+      </Actor>
+    </hasActor>
+    <hasActor rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_dimaggio"/>
+    <isProducedBy>
+      <ProductionCompany rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#company_dc_entertainment">
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DC Entertainment</name>
+      </ProductionCompany>
+    </isProducedBy>
+  </Film>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#isProducedBy">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#ProductionCompany"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasRating"/>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_goodman">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob Goodman</name>
+  </Writer>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_gardner_fox">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gardner Fox</name>
+  </Writer>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brian_azzarello">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian Azzarello</name>
+  </Writer>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brian_augustyn">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian Augustyn</name>
+  </Writer>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_ostrander">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Ostrander</name>
+  </Writer>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tab_murphy">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tab Murphy</name>
+  </Writer>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasActor">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Actor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasReleaseDate">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Date"/>
+  </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#name">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain>
-      <owl:Class rdf:nodeID="N2f0f3407f931498e95be8f27f5f5a7a5">
+      <owl:Class rdf:nodeID="N0785db5402794e00860af10c0e5b640b">
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
           <rdf:Description rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#ProductionCompany"/>
@@ -934,63 +948,53 @@
       </owl:Class>
     </rdfs:domain>
   </owl:DatatypeProperty>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bill_finger">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Finger</name>
-  </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brian_azzarello">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian Azzarello</name>
-  </Writer>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasCharacterWriter">
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer"/>
-  </owl:ObjectProperty>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_tab_murphy">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tab Murphy</name>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_frank_miller">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank Miller</name>
   </Writer>
   <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_david_mazzucchelli">
     <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Mazzucchelli</name>
   </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_gardner_fox">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gardner Fox</name>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasImdbRating"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasMonth"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasRuntime"/>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_lew_schwartz">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lew Schwartz</name>
   </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_john_byrne">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Byrne</name>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_klaus_janson">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klaus Janson</name>
+  </Writer>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_heath_corson">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath Corson</name>
+  </Writer>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasDirector">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Director"/>
+  </owl:ObjectProperty>
+  <owl:Ontology rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology"/>
+  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_mike_mignola">
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mike Mignola</name>
   </Writer>
   <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_randy_rogel">
     <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Randy Rogel</name>
   </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_lew_schwartz">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lew Schwartz</name>
-  </Writer>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_brian_bolland">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brian Bolland</name>
-  </Writer>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasImdbRating"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasYear"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasRottenTomatoScore"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasTitle"/>
   <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_denny_o'neil">
     <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denny O'Neil</name>
   </Writer>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasMetascore"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasRottenTomatoScore"/>
-  <Writer rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#person_bob_goodman">
-    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob Goodman</name>
-  </Writer>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasReleaseDate">
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Date"/>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasRating"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasRuntime"/>
-  <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Human"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#hasDay"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Human"/>
+  </owl:Class>
   <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Actor">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Human"/>
   </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#ProductionCompany"/>
   <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Film"/>
   <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Director">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Human"/>
   </owl:Class>
-  <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#ProductionCompany"/>
-  <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Writer">
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Human"/>
-  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Human"/>
   <owl:Class rdf:about="http://www.semanticweb.org/charleswan/ontologies/batman-ontology#Date"/>
 </rdf:RDF>
