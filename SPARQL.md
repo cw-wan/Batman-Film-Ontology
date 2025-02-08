@@ -13,11 +13,11 @@ PREFIX tg:<http://www.turnguard.com/functions#>
 
 SELECT ?filmTitle ?year
 WHERE {
-	?film rdf:type ns:Film .
-	?film ns:hasTitle ?filmTitle .
-	?film ns:hasReleaseDate ?date .
-	?date ns:hasYear ?year.
-	FILTER(?year < 2000) .
+    ?film rdf:type ns:Film .
+    ?film ns:hasTitle ?filmTitle .
+    ?film ns:hasReleaseDate ?date .
+    ?date ns:hasYear ?year.
+    FILTER(?year < 2000) .
 }
 ```
 Result:
@@ -101,18 +101,18 @@ PREFIX tg:<http://www.turnguard.com/functions#>
 
 SELECT ?prequel ?yearPrequel ?ratingPrequel ?sequel ?yearSequel ?ratingSequel
 WHERE {
-	?filmA rdf:type ns:Film .
-	?filmB rdf:type ns:Film .
-	?filmA ns:hasSequel ?filmB .
-	?filmA ns:hasTitle ?prequel .
-	?filmB ns:hasTitle ?sequel .
-	?filmA ns:hasReleaseDate ?dA .
-	?filmB ns:hasReleaseDate ?dB .
-	?dA ns:hasYear ?yearPrequel .
-	?dB ns:hasYear ?yearSequel .
-	?filmA ns:hasImdbRating ?ratingPrequel .
-	?filmB ns:hasImdbRating ?ratingSequel .
-	FILTER (?ratingPrequel < ?ratingSequel) .
+    ?filmA rdf:type ns:Film .
+    ?filmB rdf:type ns:Film .
+    ?filmA ns:hasSequel ?filmB .
+    ?filmA ns:hasTitle ?prequel .
+    ?filmB ns:hasTitle ?sequel .
+    ?filmA ns:hasReleaseDate ?dA .
+    ?filmB ns:hasReleaseDate ?dB .
+    ?dA ns:hasYear ?yearPrequel .
+    ?dB ns:hasYear ?yearSequel .
+    ?filmA ns:hasImdbRating ?ratingPrequel .
+    ?filmB ns:hasImdbRating ?ratingSequel .
+    FILTER (?ratingPrequel < ?ratingSequel) .
 }
 ```
 Result:
