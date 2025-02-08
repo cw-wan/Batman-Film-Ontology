@@ -285,7 +285,7 @@ for idx, row in df.iterrows():
                 g.add((film_uri, hasStoryWriter, w_uri))
             elif "screenplay" in wrole_lc:
                 g.add((film_uri, hasScreenplayWriter, w_uri))
-            elif "character" in wrole_lc:
+            elif "character" in wrole_lc or "created by" in wrole_lc:
                 g.add((film_uri, hasCharacterWriter, w_uri))
 
 ##############################################################################

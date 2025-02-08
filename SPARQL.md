@@ -104,6 +104,16 @@ WHERE {
     }
 }
 ```
+Result:
+```text
+---------------------
+| directorName      |
+=====================
+| Zack Snyder       |
+| Bruce Timm        |
+| Christopher Nolan |
+---------------------
+```
 
 ## Rule-based Inference
 
