@@ -78,6 +78,33 @@ Result:
 -----------------------------------------
 ```
 
+Get all the directors who have experience in script writing (any contribution among story, screenplay and characters):
+```sparql
+PREFIX ns: <http://www.semanticweb.org/charleswan/ontologies/batman-ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX tg:<http://www.turnguard.com/functions#>
+
+SELECT DISTINCT ?directorName
+WHERE {
+    ?dir rdf:type ns:Director .
+    ?dir ns:name ?directorName .
+    {
+        ?f ns:hasStoryWriter ?dir
+    }
+    UNION
+    {
+        ?f ns:hasScreenplayWriter ?dir
+    }
+    UNION
+    {
+        ?f ns:hasCharacterWriter ?dir
+    }
+}
+```
+
 ## Rule-based Inference
 
 Define rules:
@@ -88,6 +115,7 @@ Define rules:
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 [rule1: (?FA rdf:type ns:Film) (?FB rdf:type ns:Film) (?FA ns:hasDirector ?DA) (?FB ns:hasDirector ?DA) (?FA ns:hasReleaseDate ?TA) (?FB ns:hasReleaseDate ?TB) (?TA ns:hasYear ?YA) (?TB ns:hasYear ?YB) greaterThan(?YB, ?YA) -> (?FA ns:hasSequel ?FB)]
+[rule2: (?FA rdf:type ns:Film) (?FB rdf:type ns:Film) (?FA ns:hasSequel ?FB) -> (?FB ns:hasPrequel ?FA)]
 ```
 
 Find all prequel-sequel pairs that the sequel achieves a better rating than the prequel:
@@ -125,5 +153,31 @@ Result:
 | "Batman: The Dark Knight Returns, Part 1"^^xsd:string | 2012        | "8.0"^^xsd:float | "Batman: The Dark Knight Returns, Part 2"^^xsd:string | 2013       | "8.4"^^xsd:float |
 | "Batman: The Killing Joke"^^xsd:string                | 2016        | "6.4"^^xsd:float | "Batman: Gotham by Gaslight"^^xsd:string              | 2018       | "6.7"^^xsd:float |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+
+Use hasPrequel in query to get the same result:
+```sparql
+PREFIX ns: <http://www.semanticweb.org/charleswan/ontologies/batman-ontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX tg:<http://www.turnguard.com/functions#>
+
+SELECT ?prequel ?yearPrequel ?ratingPrequel ?sequel ?yearSequel ?ratingSequel
+WHERE {
+	?filmA rdf:type ns:Film .
+	?filmB rdf:type ns:Film .
+	?filmA ns:hasPrequel ?filmB .
+	?filmA ns:hasTitle ?sequel .
+	?filmB ns:hasTitle ?prequel .
+	?filmA ns:hasReleaseDate ?dA .
+	?filmB ns:hasReleaseDate ?dB .
+	?dA ns:hasYear ?yearSequel .
+	?dB ns:hasYear ?yearPrequel .
+	?filmA ns:hasImdbRating ?ratingSequel .
+	?filmB ns:hasImdbRating ?ratingPrequel .
+	FILTER (?ratingPrequel < ?ratingSequel) .
+}
 ```
 

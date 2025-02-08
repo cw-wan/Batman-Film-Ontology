@@ -13,18 +13,27 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX tg:<http://www.turnguard.com/functions#>
 
-SELECT ?filmTitle ?year
+SELECT DISTINCT ?directorName
 WHERE {
-	?film rdf:type ns:Film .
-	?film ns:hasTitle ?filmTitle .
-	?film ns:hasReleaseDate ?date .
-	?date ns:hasYear ?year.
-	FILTER(?year < 2000) .
+    ?dir rdf:type ns:Director .
+    ?dir ns:name ?directorName .
+    {
+        ?f ns:hasStoryWriter ?dir
+    }
+    UNION
+    {
+        ?f ns:hasScreenplayWriter ?dir
+    }
+    UNION
+    {
+        ?f ns:hasCharacterWriter ?dir
+    }
 }
 """
 
 # 3) Execute the query
 results = g.query(sparql_query)
+
 
 # 4) Iterate over the results
 
@@ -56,7 +65,7 @@ def print_sparql_result_table(query_results):
     # 3) Compute column widths
     # First, we need the number of columns.
     num_cols = len(var_names)
-    col_widths = [0]*num_cols
+    col_widths = [0] * num_cols
     for row_vals in rows:
         for i, cell in enumerate(row_vals):
             col_widths[i] = max(col_widths[i], len(cell))
@@ -93,5 +102,6 @@ def print_sparql_result_table(query_results):
 
     # Print bottom divider
     print_divider("-")
+
 
 print_sparql_result_table(results)
