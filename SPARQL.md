@@ -90,7 +90,7 @@ Define rules:
 [rule1: (?FA rdf:type ns:Film) (?FB rdf:type ns:Film) (?FA ns:hasDirector ?DA) (?FB ns:hasDirector ?DA) (?FA ns:hasReleaseDate ?TA) (?FB ns:hasReleaseDate ?TB) (?TA ns:hasYear ?YA) (?TB ns:hasYear ?YB) greaterThan(?YB, ?YA) -> (?FA ns:hasSequel ?FB)]
 ```
 
-Find all film-sequel pairs that the sequel achieves a better rating than the prequel:
+Find all prequel-sequel pairs that the sequel achieves a better rating than the prequel:
 ```sparql
 PREFIX ns: <http://www.semanticweb.org/charleswan/ontologies/batman-ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
